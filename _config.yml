@@ -4,6 +4,7 @@ highlighter: pygments
 
 # includes
 disqus:
+google_analytics:
 
 sass:
   style: :expanded
