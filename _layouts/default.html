@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% if page.title %}{{ page.title }} - {{site.name}}{% else %}{{site.name}} - {{site.description}}{% endif %}</title>
+        <meta name="description" content="{{site.meta_description}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        {{content}}
+        {% include analytics.html %}
+    </body>
+</html>
