@@ -1,0 +1,5 @@
+sass:
+  style: :expanded
+
+gems:
+  - jekyll-sitemap

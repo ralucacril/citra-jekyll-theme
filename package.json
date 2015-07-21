@@ -1,0 +1,19 @@
+{
+    "name": "citra",
+    "description": "minimal blog theme for Jekyll",
+    "version": "0.1.0",
+    "keywords": [
+        "jekyll theme",
+        "minimal blog"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/narcis-radu/citra-jekyll-theme"
+    },
+    "bugs": {
+        "url": "https://github.com/narcis-radu/citra-jekyll-theme/issues"
+    },
+    "author": "narcis radu",
+    "license": "MIT",
+    "homepage": "http://narcisradu.ro"
+}
