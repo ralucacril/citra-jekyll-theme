@@ -1,3 +1,10 @@
+# config
+markdown: redcarpet
+highlighter: pygments
+
+# includes
+disqus:
+
 sass:
   style: :expanded
 
