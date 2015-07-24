@@ -2,10 +2,19 @@
 name: "your name"
 description: "your description"
 meta_description: "your meta description"
+baseurl:
 
 # config
 markdown: redcarpet
 highlighter: pygments
+permalink: /:title/
+exclude: [
+    "node_modules",
+    "LICENSE",
+    "README.md",
+    "gulpfile.js",
+    "package.json"
+]
 
 # includes
 disqus:

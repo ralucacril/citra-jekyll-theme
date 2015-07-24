@@ -1,5 +1,18 @@
 ---
 layout: default
 ---
-{{content}}
-{% include disqus.html %}
+<div class="post">
+    <div class="post__header">
+        <h1 class="post__title">{{page.title}}</h1>
+        {% if page.subtitle %}<h2 class="post__subtitle">{{page.subtitle}}</h2>{% endif %}
+        <p class="post__credits">by <strong>{{site.name}}</strong> — Posted {% if page.category %}in <strong>{{page.category}}</strong>{% endif %} on <strong>{{ page.date | date: "%-d %B %Y" }}</strong>
+        </div>
+    <div class="post__content">
+        {{content}}
+    </div>
+    <div class="post__comments">
+        {% include disqus.html %}
+    </div>
+</div>
+
+
