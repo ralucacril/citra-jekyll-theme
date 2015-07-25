@@ -1,5 +1,4 @@
 ---
-layout: post
 title: this is sparta
 subtitle: this is the subtitle
 category: cat1
