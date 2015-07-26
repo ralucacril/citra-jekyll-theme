@@ -1,0 +1,120 @@
+@mixin content-element() {
+    max-width: $content-width;
+    margin: 0 auto 100px;
+}
+
+@mixin link() {
+    -webkit-transition: background-color 0.3s linear;
+       -moz-transition: background-color 0.3s linear;
+            transition: background-color 0.3s linear;
+
+
+    &:hover,
+    &:active {
+        color: $background-color;
+        background-color: $highlight-color;
+    }
+}
+
+.content {
+    -webkit-font-smoothing: antialiased;
+       -moz-font-smoothing: antialiased;
+    color: $content-font-color;
+
+    &__header {
+        padding: 0 30px;
+        color: $content-header-color;
+    }
+
+    &__title {
+        font-size: $content-title-font-size;
+        line-height: $content-title-line-height;
+        font-weight: 800;
+        margin: 0;
+        padding: 0 0 14px;
+        display: block;
+    }
+
+    &__subtitle {
+        font-size: $content-subtitle-font-size;
+        line-height: $content-subtitle-line-height;
+        font-weight: 300;
+        margin: 0;
+        padding: 0 0 30px;
+        display: block;
+    }
+
+    &__credits {
+        font-size: $content-credits-font-size;
+        line-height: $content-credits-line-height;
+        font-weight: 300;
+        margin: 0;
+        padding: 0 0 70px;
+        display: block;
+    }
+
+    &__content {
+        @include content-element;
+
+        p:first-child {
+            font-size: $font-size * 1.35;
+            line-height: $line-height * 1.35;
+            margin: 0 0 $line-height * 1.35;
+        }
+
+        a {
+            display: inline-block;
+            color: $highlight-color;
+            text-decoration: none;
+            @include link;
+        }
+    }
+
+    &__comments {
+        @include content-element;
+    }
+
+    &__other-articles {
+        @include content-element;
+
+        &-holder {
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    &__other-article {
+        border-bottom: 1px solid lighten($content-font-color, 50%);
+        padding: 10px 0;
+
+        &:last-of-type {
+            border-bottom: 1px solid transparent;
+        }
+
+        &-title {
+            float: left;
+            color: $highlight-color;
+            padding: 0 5px;
+            margin-left: -5px;
+            @include link;
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+
+        &-date {
+            float: right;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $content-font-color;
+        }
+
+
+    }
+}
+
+

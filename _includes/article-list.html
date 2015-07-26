@@ -1,0 +1,16 @@
+<div class="content__other-articles">
+    <h4 class="content__subtitle center">Read more</h4>
+    <ul class="content__other-articles-holder">
+        {% assign current-post = page.title %}
+        {% for post in site.posts limit:10 %}
+            {% unless post.title == current-post %}
+                <li class="content__other-article clearfix">
+                    <a href="{{ post.url }}" class="content__other-article-link">
+                        <div class="content__other-article-title">{{ post.title }}</div>
+                        <div class="content__other-article-date">{{ post.date | date: "%-d %B %Y" }}</div>
+                    </a>
+                </li>
+            {% endunless %}
+        {% endfor %}
+    </ul>
+</div>

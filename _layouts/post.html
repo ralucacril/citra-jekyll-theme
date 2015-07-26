@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="content post">
-    <div class="content__header">
+    <div class="content__header center">
         <h1 class="content__title">{{page.title}}</h1>
         {% if page.subtitle %}<h2 class="content__subtitle">{{page.subtitle}}</h2>{% endif %}
         <p class="content__credits">by <strong>{{site.name}}</strong> — Posted {% if page.category %}in <strong>{{page.category}}</strong>{% endif %} on <strong>{{ page.date | date: "%-d %B %Y" }}</strong>
@@ -13,6 +13,8 @@ layout: default
     <div class="content__comments">
         {% include disqus.html %}
     </div>
+
+    {% include article-list.html %}
 </div>
 
 

@@ -1,5 +1,5 @@
 ---
-title: this is sparta
+title: suie paparude
 subtitle: this is the subtitle
 category: cat1
 ---

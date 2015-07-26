@@ -1,1 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,400,800);
+
+// DEFAULTS
+
+// fonts
+$font-family: "Raleway", "Arial", sans-serif;
+$font-size: 22px;
+$line-height: $font-size * 1.5;
+$font-weight: 400;
+
+// colors
+$background-color: #f5f6f7;
+
+
+
+// CONTENT
+
+// fonts
+$content-title-font-size: 74px;
+$content-title-line-height: $content-title-font-size * 1.1;
+$content-subtitle-font-size: 39px;
+$content-subtitle-line-height: $content-subtitle-font-size;
+$content-credits-font-size: 19px;
+$content-credits-line-height: $content-credits-font-size * 1.5;
+
+// colors
+$content-header-color: #514753;
+$content-font-color: #69606b;
+$separator-color: lighten($content-header-color, 50%);
+$highlight-color: #1abc9c;
+
+// size
+$content-width: 1000px;

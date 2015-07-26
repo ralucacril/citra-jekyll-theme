@@ -29,7 +29,7 @@ defaults:
             layout: post
 
 # includes
-disqus:
+disqus: narcisradu
 google_analytics:
 
 sass:
