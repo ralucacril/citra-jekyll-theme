@@ -8,7 +8,6 @@
        -moz-transition: background-color 0.3s linear;
             transition: background-color 0.3s linear;
 
-
     &:hover,
     &:active {
         color: $background-color;
@@ -95,8 +94,6 @@
         &-title {
             float: left;
             color: $highlight-color;
-            padding: 0 5px;
-            margin-left: -5px;
             @include link;
 
             &:first-letter {
@@ -106,6 +103,11 @@
 
         &-date {
             float: right;
+        }
+
+        &-title,
+        &-date {
+            padding: 0 10px;
         }
 
         &-link {
