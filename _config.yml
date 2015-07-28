@@ -6,7 +6,7 @@ baseurl:
 
 # config
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 exclude:
     - node_modules
